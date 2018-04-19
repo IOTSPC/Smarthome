@@ -1,0 +1,1147 @@
+<!doctype html>
+<html lang="zh" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" type="text/css" href="chart/css/styles.css">
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<script src="chart/code/highcharts.js"></script>
+	<script src="chart/code/highcharts-more.js"></script>
+	<script src="chart/code/modules/exporting.js"></script>					             
+													             
+	<title>PCT Smart Home Solution </title>
+	</head>
+	<body>
+	
+	<div class="projects-container">
+		<ul>
+			<li>
+				<div class="cd-title">
+					<h2>Sensor</h2>
+						<p>All Seneor Status Chart</p>
+				</div> <!-- .cd-title -->
+
+				<div class="cd-project-info">
+					<p>
+							<header class="htmleaf-header">
+									<h1>智慧感測器狀態表 <span> Smart Home All Sensor Chart</span></h1>
+									<div class="htmleaf-links">
+										<a class="htmleaf-icon icon-htmleaf-home-outline" href="http://www.pct.com.tw/" title="PCT Smort Home" target="_blank"><span>PCT Smort Home</span></a>										
+									</div>
+							</header>
+								  <br>
+						          <br>	
+						          <br>
+						          <br>															          
+								 <div class="box1">									 
+									 <h1 style="text-align: center; font-size: 40px;">1F 現在溫度</h1>
+									 <br>
+						             <br>						              								            
+											<div class="GaugeMeter" 
+													  id="GaugeMeter_1" 													  
+													  data-percent="23"
+													  data-append="°C" 
+													  data-size="250" 
+													  data-width="40" 
+													  data-stripe="4" 
+													  data-theme="Red-Gold-Green">
+											</div>
+									</div>
+									
+									<div class="box1">
+										 <h1 style="text-align: center; font-size: 40px;">1F 現在溼度</h1>
+										  <br>
+						                  <br>
+												<div class="GaugeMeter" 
+														  id="GaugeMeter_2" 
+														  data-percent="50" 
+														  data-append="%" 
+														  data-size="250" 
+														  data-width="40" 
+														  data-stripe="4" 
+														  data-theme="Green-Gold-Red">
+												</div>
+									</div>
+									
+									<div class="box1">
+										 <h1 style="text-align: center; font-size: 40px;">2F 現在溫度</h1>
+										 <br>
+						                 <br>   
+												<div class="GaugeMeter" 
+														  id="GaugeMeter_3" 
+														  data-percent="23" 
+														  data-append="°C" 
+														  data-size="250" 
+														  data-width="40" 
+														  data-stripe="4" 
+														  data-theme="Green-Gold-Red">
+												</div>
+									</div>
+									
+									<div class="box1">
+										 <h1 style="text-align: center; font-size: 40px;">2F 現在溼度</h1>
+										 <br>
+						                 <br>
+												<div class="GaugeMeter" 
+														  id="GaugeMeter_4" 
+														  data-percent="70" 
+														  data-append="%" 
+														  data-size="250" 
+														  data-width="40" 
+														  data-stripe="4" 
+														  data-theme="Red-Gold-Green">
+												</div>	 
+									</div>	
+						    <hr>
+						      <br>
+						      <br> 						     
+						      <br>
+						      <br>
+						      <h1 style="text-align: center; font-size: 40px;">月溫濕度統計表</h1>
+						      <br>
+						      <br>
+						      <div id="container" style="min-width: 1180px; height: 500px; margin: 0 auto"></div>					      
+						    <hr>m
+						       <br>
+						       <br>
+						       <br>
+						       <br>
+						      <h1 style="text-align: center; font-size: 40px;">年溫濕度統計表</h1>
+						      <br>
+						      <br>
+						      <div id="container1" style="min-width: 1180px; height: 500px; margin: 0 auto"></div>					      
+						    <hr>							
+					</p>
+				</div> <!-- .cd-project-info -->
+			</li>
+
+			<li>
+				<div class="cd-title">
+					<h2>Meter</h2>
+					<p>All Meter Status Chart</p>
+				</div> <!-- .cd-title -->
+
+				<div class="cd-project-info">
+					<p>
+						       <header class="htmleaf-header">
+										<h1>智慧電壓狀態表 <span> Smart Home All Meter Status Chart</span></h1>
+										<div class="htmleaf-links">
+											<a class="htmleaf-icon icon-htmleaf-home-outline" href="http://www.pct.com.tw/" title="PCT Smort Home" target="_blank"><span>PCT Smort Home</span></a>										
+										</div>
+								</header>							
+									
+									 <div class="box1">
+										 <h1 style="text-align: center; font-size: 30px;">現在輸入電壓</h1>
+												<div class="GaugeMeter" 
+														  id="GaugeMeter_5" 
+														  data-percent="18" 
+														  data-append="V" 
+														  data-size="250" 
+														  data-width="30" 
+														  data-style="Arch" 
+														  data-theme="LightBlue-DarkBlue">
+												</div>
+										</div>
+										
+										<div class="box1">
+											 <h1 style="text-align: center; font-size: 30px;">現在輸出電壓</h1>
+													<div class="GaugeMeter" 
+															  id="GaugeMeter_6" 
+															  data-percent="5" 
+															  data-append="V" 
+															  data-size="250" 
+															  data-width="30" 
+															  data-style="Arch" 
+															  data-theme="LightRed-DarkRed">
+													</div>
+										</div>
+										
+										<div class="box1">
+											 <h1 style="text-align: center; font-size: 30px;">平均輸入安培</h1>
+													<div class="GaugeMeter" 
+															  id="GaugeMeter_7" 
+															  data-percent="6" 
+															  data-append="A" 
+															  data-size="250" 
+															  data-width="30" 
+															  data-style="Arch" 
+															  data-theme=" LightGreen-DarkGreen">
+													</div>
+										</div>
+										
+										<div class="box1">
+											 <h1 style="text-align: center; font-size: 30px;">平均輸出安培</h1>
+													<div class="GaugeMeter" 
+															id="GaugeMeter_8" 
+															data-percent="3" 
+															data-append="A" 
+															data-size="250" 
+															data-style="Arch" 
+															data-theme="LightGold-DarkGold"
+															data-width="30">															
+													</div>	 
+										</div>	
+								<hr>
+								  <br>
+								  <br> 						     
+								  <br>
+								  <br>
+								  <h1 style="text-align: center; font-size: 40px;">七月用電統計表</h1>
+								  <br>
+								  <br>
+								  <div id="container4" style="min-width: 1180px; height: 500px; margin: 0 auto"></div>					      
+								<hr>
+								   <br>
+								   <br>
+								   <br>
+								   <br>
+								  <h1 style="text-align: center; font-size: 40px;">年度用電統計表</h1>
+								  <br>
+								  <br>
+								  <div id="container5" style="min-width: 1180px; height: 500px; margin: 0 auto"></div>
+					</p>
+				</div> <!-- .cd-project-info -->
+			</li>
+
+			<li>
+				<div class="cd-title">
+					<h2>Remoter Control</h2>
+					<p>All Light Remoter Status and Control</p>
+				</div> <!-- .cd-title -->
+
+				<div class="cd-project-info">
+					<p>
+			    		 <link rel="stylesheet" type="text/css" href="button/css/style.css" />
+                         <link rel="stylesheet" type="text/css" href="button/css/font-awesome.css" />
+           				 <link rel="stylesheet" type="text/css" href="clock/css/default.css">
+						 <link rel="stylesheet" type="text/css" href="clock/css/demo.css">
+	
+				
+					         <header class="htmleaf-header">
+									<h1>智慧電燈控制 <span> Smart Home All Light Remoter Status and Control</span></h1>
+									<div class="htmleaf-links">
+										<a class="htmleaf-icon icon-htmleaf-home-outline" href="http://www.pct.com.tw/" title="PCT Smort Home" target="_blank"><span> PCT Smort Home</span></a>										
+									</div>
+							</header>
+								                        
+		                          <div class="box">
+									    <br>
+										<br>
+										<h1 style="text-align: left; font-size: 30px;">客廳主燈</h1>
+										<br>
+										<br>
+										<br>
+										<br>
+										<div class="switch demo4">
+											<form action="" method="post">
+													<input  type="checkbox" onclick="liviroom()" >
+															<p id="demo"></p>
+															<label><i class='icon-off' ></i></label>												
+											</form>									
+										</div>																	
+								 </div>	
+								 <div class="box">
+									    <br>
+										<br>
+										<h1 style="text-align: left; font-size: 30px;">餐廳主燈</h1>
+										<br>
+										<br>
+										<br>
+										<br>
+										<div class="switch demo4">
+											<input type="checkbox" onclick="restroom()" >
+												<label><i class='icon-off'></i></label>										
+										</div>																			
+								 </div>	
+								 <div class="box">
+									    <br>
+										<br>
+										<h1 style="text-align: left; font-size: 30px;">廚房主燈</h1>
+										<br>
+										<br>
+										<br>
+										<br>
+										<div class="switch demo4">
+											<input type="checkbox" onclick="kitcroom()">
+											<label><i class='icon-off'></i></label>										
+										</div>																									
+								 </div>	
+								 <div class="box">
+									    <br>
+										<br>
+										<h1 style="text-align: left; font-size: 30px;">臥室主燈</h1>
+										<br>
+										<br>
+										<br>
+										<br>
+										<div class="switch demo4">
+											<input type="checkbox" onclick="bedroom()">
+											<label><i class='icon-off'></i></label>										
+										</div>																	
+								 </div>	
+								 <div class="box">
+									    <br>
+										<br>
+										<h1 style="text-align: left; font-size: 30px;">客房主燈</h1>
+										<br>
+										<br>
+										<br>
+										<br>
+										<div class="switch demo4">
+											<input type="checkbox" onclick="guestroom()">
+											<label><i class='icon-off'></i></label>										
+										</div>																	
+								 </div>	
+								 <div class="box">
+									    <br>
+										<br>
+										<h1 style="text-align: left; font-size: 30px;">書房主燈</h1>
+										<br>
+										<br>
+										<br>
+										<br>
+										<div class="switch demo4">
+											<input type="checkbox" onclick="studyroom()">
+											<label><i class='icon-off'></i></label>										
+										</div>																	
+								 </div>		
+					</p>
+				</div> <!-- .cd-project-info -->
+			</li>
+
+			<li>
+				<div class="cd-title">
+					<h2>Smart Home</h2>
+					<p>Smart Home Solution Big Data Display Center</p>
+				</div> <!-- .cd-title -->
+
+				<div class="cd-project-info">					
+					<p>
+						<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+						<script src="mchart/code/highstock.js"></script>
+						<script src="mchart/code/modules/exporting.js"></script>
+						
+						   <header class="htmleaf-header">
+									<h1>智能家居大數據顯示中心 <span> Smart Home Solution Big Data Display Center</span></h1>
+									<div class="htmleaf-links">
+										<a class="htmleaf-icon icon-htmleaf-home-outline" href="http://www.pct.com.tw/" title="PCT Smart Home" target="_blank"><span> PCT Smart Home</span></a>
+										<a class="htmleaf-icon icon-htmleaf-arrow-forward-outline" href="all_chart/index.html"title="PCT Smart Home Center" target="_blank" ><span> 智能家居大數據顯示中心</span></a>	
+									</div>
+						   </header>
+						   	
+						   	<h1 style="text-align: center; font-size: 30px;">智能家居大數據顯示</h1>														 
+							 <div class="box1">								  
+									  <div id="container2" style="min-width: 1100px; height: 300px; margin: 0 auto"></div>		
+							  </div>							
+					</p>
+				</div> <!-- .cd-project-info -->
+			</li>
+		</ul>
+		<a href="#0" class="cd-close">Close</a>
+		<a href="#0" class="cd-scroll">Scroll</a>
+	</div> <!-- .project-container -->
+	
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/main.js"></script> <!-- Resource jQuery -->
+	<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
+	<script src="chart/js/jquery.AshAlom.gaugeMeter-2.0.0.min.js"></script>		
+	
+	<script>
+										$(document).ready(function(){
+										//GaugeMeter
+										$(".GaugeMeter").gaugeMeter();
+
+										//Format Code
+										$("pre.Code").html(function (index, html) {
+											return html.replace(/^(.*)$/mg, "<span class='Line'>$1</span>")
+										});
+
+										//Sticky Table Header
+										var tables = $("table.StickyHeader");
+										tables.each(function(i){
+											var table = tables[i];
+											var theadClone = $(table).find("thead").clone(true);
+											var stickyHeader =  $("<div></div>").addClass("StickyHeader Hide");
+											stickyHeader.append($("<table></table")).find("table").append(theadClone);
+											$(table).after(stickyHeader);
+
+											var tableHeight = $(table).height();
+											var tableWidth = $(table).width() + Number($(table).css("padding-left").replace(/px/ig,"")) + Number($(table).css("padding-right").replace(/px/ig,"")) + Number($(table).css("border-left-width").replace(/px/ig,"")) + Number($(table).css("border-right-width").replace(/px/ig,""));
+
+											var headerCells = $(table).find("thead th");
+											var headerCellHeight = $(headerCells[0]).height();
+
+											var no_fixed_support = false;
+											if (stickyHeader.css("position") == "Absolute"){
+												no_fixed_support = true;
+											}
+
+											var stickyHeaderCells = stickyHeader.find("th");
+											//stickyHeader.css("width", tableWidth);
+											stickyHeader.css("width", "100%");
+
+											/*
+											for (i=0; i<headerCells.length; i++) {
+												var headerCell = $(headerCells[i]);
+												var cellWidth = headerCell.width();
+												$(stickyHeaderCells[i]).css("width", cellWidth);
+											}
+											*/
+											var cellWidth = $(headerCells[0]).width() + 1;
+											$(stickyHeaderCells[0]).attr("style", "width:" + cellWidth + "px !important");
+
+											var cutoffTop = $(table).offset().top;
+											var cutoffBottom = tableHeight + cutoffTop - headerCellHeight;
+
+											$(window).scroll(function(){ 
+											var currentPosition = $(window).scrollTop();
+												if(currentPosition > cutoffTop && currentPosition < cutoffBottom){
+													stickyHeader.removeClass("Hide");
+													if (no_fixed_support){
+														stickyHeader.css("top", currentPosition + "px");
+													}
+												}else{
+													stickyHeader.addClass("Hide");
+												}
+											});
+										});
+									});														
+									
+									$(function(){
+											function getTemp() {
+												
+												//$("#GaugeMeter_1").gaugeMeter();																			
+												
+												$.getJSON('http://192.168.8.166/temp', function(ctemp_data){	
+														$("#GaugeMeter_1").data("percent",ctemp_data);
+														$("#GaugeMeter_1").empty();
+												    	$("#GaugeMeter_1").gaugeMeter();												    	
+												});
+												
+												$.getJSON('http://192.168.8.166/humi', function(chumi_data){
+														$("#GaugeMeter_2").data("percent",chumi_data);
+														$("#GaugeMeter_2").empty();
+														$("#GaugeMeter_2").gaugeMeter();														
+												});    	
+												    	
+												$.getJSON('http://192.168.8.188/temp', function(temp_data){	
+														$("#GaugeMeter_3").data("percent",temp_data);
+														$("#GaugeMeter_3").empty();
+												    	$("#GaugeMeter_3").gaugeMeter();
+												});
+												
+												$.getJSON('http://192.168.8.188/humi', function(humi_data){
+														$("#GaugeMeter_4").data("percent",humi_data);
+														$("#GaugeMeter_4").empty();
+												    	$("#GaugeMeter_4").gaugeMeter();													
+												});											
+												
+												$.getJSON('http://192.168.8.188/voltage', function(vol_data){												
+														$("#GaugeMeter_6").data("percent",vol_data);
+														$("#GaugeMeter_6").empty();
+												    	$("#GaugeMeter_6").gaugeMeter();
+												    	$("#GaugeMeter_5").data("percent",vol_data+7);
+														$("#GaugeMeter_5").empty();
+														$("#GaugeMeter_5").gaugeMeter();				
+												});
+												
+												$.getJSON('http://192.168.8.188/ampere', function(amp_data){												
+														$("#GaugeMeter_7").data("percent",amp_data+1);
+														$("#GaugeMeter_7").empty();
+												    	$("#GaugeMeter_7").gaugeMeter();
+												    	$("#GaugeMeter_8").data("percent",amp_data);
+														$("#GaugeMeter_8").empty();
+														$("#GaugeMeter_8").gaugeMeter(); 	
+												});											
+																	
+												}       
+														getTemp();  // 網頁載入完畢時，立即讀取並顯示溫溼度值。
+														setInterval(function(){
+																	getTemp();
+																	}, 5000);
+									});			
+									
+		</script>
+		
+		<script>			
+			   livchk = 0;
+			   restchk = 0;
+			   kitchk = 0;
+			   bedchk = 0;
+			   guechk = 0;
+			   stuchk = 0;
+			   
+				function liviroom() {
+				   			if (livchk==0){
+							  $.post( "http://192.168.8.168/jsonp"  + "?liviroom=1", function (Data) {						
+									});
+							livchk = 1;		
+							}else{								
+								$.post( "http://192.168.8.168/jsonp"  + "?liviroom=0", function (Data) {						
+									});
+									livchk = 0;	
+								}			
+				 }
+				
+				function restroom() {
+				   			if (restchk==0){
+							  $.post( "http://192.168.8.168/jsonp"  + "?restroom=1", function (Data) {						
+									});
+							restchk = 1;		
+							}else{								
+								$.post( "http://192.168.8.168/jsonp"  + "?restroom=0", function (Data) {						
+									});
+									restchk = 0;	
+								}			
+				}
+				function kitcroom() {
+				   			if (kitchk==0){
+							  $.post( "http://192.168.8.158/jsonp"  + "?kitcroom=1", function (Data) {						
+									});
+							kitchk = 1;		
+							}else{								
+								$.post( "http://192.168.8.158/jsonp"  + "?kitcroom=0", function (Data) {						
+									});
+									kitchk = 0;	
+								}			
+				}
+				function bedroom() {
+				   			if (bedchk==0){
+							  $.post( "http://192.168.8.158/jsonp"  + "?bedroom=1", function (Data) {						
+									});
+							bedchk = 1;		
+							}else{								
+								$.post( "http://192.168.8.158/jsonp"  + "?bedroom=0", function (Data) {						
+									});
+									bedchk = 0;	
+								}			
+				}
+				function guestroom() {
+				   			if (guechk==0){
+							  $.post( "http://192.168.8.168/jsonp"  + "?guestroom=1", function (Data) {						
+									});
+							guechk = 1;		
+							}else{								
+								$.post( "http://192.168.8.168/jsonp"  + "?guestroom=0", function (Data) {						
+									});
+									guechk = 0;	
+								}			
+				}
+				function studyroom() {
+				   			if (stuchk==0){
+							  $.post( "http://192.168.8.168/jsonp"  + "?studyroom=1", function (Data) {						
+									});
+							stuchk = 1;		
+							}else{								
+								$.post( "http://192.168.8.168/jsonp"  + "?studyroom=0", function (Data) {						
+									});
+									stuchk = 0;	
+								}			
+				}
+		</script>  		
+		   
+	   <script type="text/javascript">
+			// July temperatures for sensor page				
+								var ranges = [
+										[1246406400000, 14.3, 37.7],
+										[1246492800000, 14.5, 37.8],
+										[1246579200000, 15.5, 39.6],
+										[1246665600000, 16.7, 30.7],
+										[1246752000000, 16.5, 35.0],
+										[1246838400000, 17.8, 35.7],
+										[1246924800000, 13.5, 34.8],
+										[1247011200000, 10.5, 31.4],
+										[1247097600000, 9.2, 33.8],
+										[1247184000000, 11.6, 31.8],
+										[1247270400000, 10.7, 33.7],
+										[1247356800000, 11.0, 33.3],
+										[1247443200000, 11.6, 33.7],
+										[1247529600000, 11.8, 30.7],
+										[1247616000000, 12.6, 32.4],
+										[1247702400000, 13.6, 39.6],
+										[1247788800000, 11.4, 32.6],
+										[1247875200000, 13.2, 35.0],
+										[1247961600000, 14.2, 31.6],
+										[1248048000000, 13.1, 37.1],
+										[1248134400000, 12.2, 35.5],
+										[1248220800000, 12.0, 30.8],
+										[1248307200000, 12.0, 37.1],
+										[1248393600000, 12.7, 38.3],
+										[1248480000000, 12.4, 39.4],
+										[1248566400000, 12.6, 39.9],
+										[1248652800000, 11.9, 30.2],
+										[1248739200000, 11.0, 39.3],
+										[1248825600000, 10.8, 37.8],
+										[1248912000000, 11.8, 38.5],
+										[1248998400000, 10.8, 36.1]
+									],
+									averages = [
+										[1246406400000, 21.5],
+										[1246492800000, 22.1],
+										[1246579200000, 23],
+										[1246665600000, 23.8],
+										[1246752000000, 21.4],
+										[1246838400000, 21.3],
+										[1246924800000, 28.3],
+										[1247011200000, 25.4],
+										[1247097600000, 26.4],
+										[1247184000000, 27.7],
+										[1247270400000, 27.5],
+										[1247356800000, 27.6],
+										[1247443200000, 27.7],
+										[1247529600000, 26.8],
+										[1247616000000, 27.7],
+										[1247702400000, 36.3],
+										[1247788800000, 37.8],
+										[1247875200000, 38.1],
+										[1247961600000, 27.2],
+										[1248048000000, 34.4],
+										[1248134400000, 23.7],
+										[1248220800000, 25.7],
+										[1248307200000, 14.6],
+										[1248393600000, 35.3],
+										[1248480000000, 25.3],
+										[1248566400000, 35.8],
+										[1248652800000, 25.2],
+										[1248739200000, 34.8],
+										[1248825600000, 34.4],
+										[1248912000000, 32],
+										[1248998400000, 33.6]
+									];
+
+
+								Highcharts.chart('container', {
+
+									title: {
+										text: 'Taipei July temperatures'
+									},
+
+									xAxis: {
+										type: 'datetime'
+									},
+
+									yAxis: {
+										title: {
+											text: null
+										}
+									},
+
+									tooltip: {
+										crosshairs: true,
+										shared: true,
+										valueSuffix: '°C'
+									},
+
+									legend: {
+									},
+
+									series: [{
+										name: 'Temperature',
+										data: averages,
+										zIndex: 1,
+										marker: {
+											fillColor: 'white',
+											lineWidth: 2,
+											lineColor: Highcharts.getOptions().colors[0]
+										}
+									}, {
+										name: 'Range',
+										data: ranges,
+										type: 'arearange',
+										lineWidth: 0,
+										linkedTo: ':previous',
+										color: Highcharts.getOptions().colors[0],
+										fillOpacity: 0.3,
+										zIndex: 0
+									}]
+								});
+		</script>
+		
+		<script type="text/javascript">
+
+			Highcharts.chart('container1', {
+				chart: {
+					zoomType: 'xy'
+				},
+				title: {
+					text: 'Average Monthly Weather Data for R.O.C Taiwan'
+				},
+				subtitle: {
+					text: 'Source: PCT.com.tw'
+				},
+				xAxis: [{
+					categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+						'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+					crosshair: true
+				}],
+				yAxis: [{ // Primary yAxis
+					labels: {
+						format: '{value}°C',
+						style: {
+							color: Highcharts.getOptions().colors[2]
+						}
+					},
+					title: {
+						text: 'Temperature',
+						style: {
+							color: Highcharts.getOptions().colors[2]
+						}
+					},
+					opposite: true
+
+				}, { // Secondary yAxis
+					gridLineWidth: 0,
+					title: {
+						text: 'Rainfall',
+						style: {
+							color: Highcharts.getOptions().colors[0]
+						}
+					},
+					labels: {
+						format: '{value} mm',
+						style: {
+							color: Highcharts.getOptions().colors[0]
+						}
+					}
+
+				}, { // Tertiary yAxis
+					gridLineWidth: 0,
+					title: {
+						text: 'Sea-Level Pressure',
+						style: {
+							color: Highcharts.getOptions().colors[1]
+						}
+					},
+					labels: {
+						format: '{value} mb',
+						style: {
+							color: Highcharts.getOptions().colors[1]
+						}
+					},
+					opposite: true
+				}],
+				tooltip: {
+					shared: true
+				},
+				legend: {
+					layout: 'vertical',
+					align: 'left',
+					x: 80,
+					verticalAlign: 'top',
+					y: 55,
+					floating: true,
+					backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
+				},
+				series: [{
+					name: 'Rainfall',
+					type: 'column',
+					yAxis: 1,
+					data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+					tooltip: {
+						valueSuffix: ' mm'
+					}
+
+				}, {
+					name: 'Sea-Level Pressure',
+					type: 'spline',
+					yAxis: 2,
+					data: [1016, 1016, 1015.9, 1015.5, 1012.3, 1009.5, 1009.6, 1010.2, 1013.1, 1016.9, 1018.2, 1016.7],
+					marker: {
+						enabled: false
+					},
+					dashStyle: 'shortdot',
+					tooltip: {
+						valueSuffix: ' mb'
+					}
+
+				}, {
+					name: 'Temperature',
+					type: 'spline',
+					data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
+					tooltip: {
+						valueSuffix: ' °C'
+					}
+				}]
+			});
+
+	</script>
+	
+	<script type="text/javascript">
+
+			$(document).ready(function () {
+				Highcharts.setOptions({
+					global: {
+						useUTC: false
+					}
+				});
+
+				Highcharts.chart('container2', {
+					chart: {
+						type: 'spline',
+						animation: Highcharts.svg, // don't animate in old IE
+						marginRight: 10,
+						events: {
+							load: function () {
+
+								// set up the updating of the chart each second
+								var series = this.series[0];
+								setInterval(function () {
+									var x = (new Date()).getTime(), // current time
+										y = Math.random();
+									series.addPoint([x, y], true, true);
+								}, 1000);
+							}
+						}
+					},
+					title: {
+						text: 'Live random data'
+					},
+					xAxis: {
+						type: 'datetime',
+						tickPixelInterval: 150
+					},
+					yAxis: {
+						title: {
+							text: 'Value'
+						},
+						plotLines: [{
+							value: 0,
+							width: 1,
+							color: '#808080'
+						}]
+					},
+					tooltip: {
+						formatter: function () {
+							return '<b>' + this.series.name + '</b><br/>' +
+								Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) + '<br/>' +
+								Highcharts.numberFormat(this.y, 2);
+						}
+					},
+					legend: {
+						enabled: false
+					},
+					exporting: {
+						enabled: false
+					},
+					series: [{
+						name: 'Random data',
+						data: (function () {
+							// generate an array of random data
+							var data = [],
+								time = (new Date()).getTime(),
+								i;
+
+							for (i = -19; i <= 0; i += 1) {
+								data.push({
+									x: time + i * 1000,
+									y: Math.random()
+								});
+							}
+							return data;
+						}())
+					}]
+				});
+			});
+	</script>
+	
+	<script type="text/javascript">
+
+			var seriesOptions = [],
+				seriesCounter = 0,
+				names = ['MSFT', 'AAPL', 'GOOG'];
+
+			/**
+			 * Create the chart when all data is loaded
+			 * @returns {undefined}
+			 */
+			function createChart() {
+
+				Highcharts.stockChart('container3', {
+
+					rangeSelector: {
+						selected: 4
+					},
+
+					yAxis: {
+						labels: {
+							formatter: function () {
+								return (this.value > 0 ? ' + ' : '') + this.value + '%';
+							}
+						},
+						plotLines: [{
+							value: 0,
+							width: 2,
+							color: 'silver'
+						}]
+					},
+
+					plotOptions: {
+						series: {
+							compare: 'percent',
+							showInNavigator: true
+						}
+					},
+
+					tooltip: {
+						pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.change}%)<br/>',
+						valueDecimals: 2,
+						split: true
+					},
+
+					series: seriesOptions
+				});
+			}
+
+			$.each(names, function (i, name) {
+
+				$.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=' + name.toLowerCase() + '-c.json&callback=?',    function (data) {
+
+					seriesOptions[i] = {
+						name: name,
+						data: data
+					};
+
+					// As we're loading the data asynchronously, we don't know what order it will arrive. So
+					// we keep a counter and create the chart when all the data is loaded.
+					seriesCounter += 1;
+
+					if (seriesCounter === names.length) {
+						createChart();
+					}
+				});
+			});
+	</script>	
+	
+	<script type="text/javascript">
+			// July temperatures for sensor page				
+								var ranges = [
+										[1246406400000, 17.3, 17.7],
+										[1246492800000, 14.5, 17.8],
+										[1246579200000, 15.5, 18.6],
+										[1246665600000, 16.7, 18.7],
+										[1246752000000, 16.5, 18.0],
+										[1246838400000, 17.8, 18.7],
+										[1246924800000, 13.5, 18.8],
+										[1247011200000, 10.5, 18.4],
+										[1247097600000, 9.2, 18.8],
+										[1247184000000, 11.6, 18.8],
+										[1247270400000, 10.7, 18.7],
+										[1247356800000, 11.0, 18.3],
+										[1247443200000, 11.6, 18.7],
+										[1247529600000, 11.8, 18.7],
+										[1247616000000, 12.6, 18.4],
+										[1247702400000, 13.6, 18.6],
+										[1247788800000, 11.4, 18.6],
+										[1247875200000, 13.2, 18.0],
+										[1247961600000, 14.2, 18.6],
+										[1248048000000, 13.1, 18.1],
+										[1248134400000, 12.2, 18.5],
+										[1248220800000, 12.0, 18.8],
+										[1248307200000, 12.0, 18.1],
+										[1248393600000, 12.7, 18.3],
+										[1248480000000, 12.4, 18.4],
+										[1248566400000, 12.6, 18.9],
+										[1248652800000, 11.9, 18.2],
+										[1248739200000, 11.0, 18.3],
+										[1248825600000, 10.8, 18.8],
+										[1248912000000, 11.8, 18.5],
+										[1248998400000, 10.8, 18.1]
+									],
+									averages = [
+										[1246406400000, 11.5],
+										[1246492800000, 12.1],
+										[1246579200000, 13],
+										[1246665600000, 13.8],
+										[1246752000000, 11.4],
+										[1246838400000, 11.3],
+										[1246924800000, 18.3],
+										[1247011200000, 15.4],
+										[1247097600000, 16.4],
+										[1247184000000, 17.7],
+										[1247270400000, 17.5],
+										[1247356800000, 17.6],
+										[1247443200000, 17.7],
+										[1247529600000, 16.8],
+										[1247616000000, 17.7],
+										[1247702400000, 16.3],
+										[1247788800000, 17.8],
+										[1247875200000, 18.1],
+										[1247961600000, 17.2],
+										[1248048000000, 14.4],
+										[1248134400000, 13.7],
+										[1248220800000, 15.7],
+										[1248307200000, 14.6],
+										[1248393600000, 15.3],
+										[1248480000000, 15.3],
+										[1248566400000, 15.8],
+										[1248652800000, 15.2],
+										[1248739200000, 14.8],
+										[1248825600000, 14.4],
+										[1248912000000, 12],
+										[1248998400000, 13.6]
+									];
+
+
+								Highcharts.chart('container4', {
+
+									title: {
+										text: 'Home  July energy used'
+									},
+
+									xAxis: {
+										type: 'datetime'
+									},
+
+									yAxis: {
+										title: {
+											text: null
+										}
+									},
+
+									tooltip: {
+										crosshairs: true,
+										shared: true,
+										valueSuffix: 'V'
+									},
+
+									legend: {
+									},
+
+									series: [{
+										name: 'Voltage',
+										data: averages,
+										zIndex: 1,
+										marker: {
+											fillColor: 'white',
+											lineWidth: 2,
+											lineColor: Highcharts.getOptions().colors[0]
+										}
+									}, {
+										name: 'Range',
+										data: ranges,
+										type: 'arearange',
+										lineWidth: 0,
+										linkedTo: ':previous',
+										color: Highcharts.getOptions().colors[0],
+										fillOpacity: 0.3,
+										zIndex: 0
+									}]
+								});
+		</script>
+		
+		<script type="text/javascript">
+
+			Highcharts.chart('container5', {
+				chart: {
+					zoomType: 'xy'
+				},
+				title: {
+					text: 'Average Monthly Voltage Data for Home'
+				},
+				subtitle: {
+					text: 'Source: PCT.com.tw'
+				},
+				xAxis: [{
+					categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+						'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+					crosshair: true
+				}],
+				yAxis: [{ // Primary yAxis
+					labels: {
+						format: '{value}°',
+						style: {
+							color: Highcharts.getOptions().colors[2]
+						}
+					},
+					title: {
+						text: 'Energy Used',
+						style: {
+							color: Highcharts.getOptions().colors[2]
+						}
+					},
+					opposite: true
+
+				}, { // Secondary yAxis
+					gridLineWidth: 0,
+					title: {
+						text: 'Intput Voltage',
+						style: {
+							color: Highcharts.getOptions().colors[0]
+						}
+					},
+					labels: {
+						format: '{value} V',
+						style: {
+							color: Highcharts.getOptions().colors[0]
+						}
+					}
+
+				}, { // Tertiary yAxis
+					gridLineWidth: 0,
+					title: {
+						text: 'Input Ampere',
+						style: {
+							color: Highcharts.getOptions().colors[1]
+						}
+					},
+					labels: {
+						format: '{value} A',
+						style: {
+							color: Highcharts.getOptions().colors[1]
+						}
+					},
+					opposite: true
+				}],
+				tooltip: {
+					shared: true
+				},
+				legend: {
+					layout: 'vertical',
+					align: 'left',
+					x: 80,
+					verticalAlign: 'top',
+					y: 55,
+					floating: true,
+					backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
+				},
+				series: [{
+					name: 'Energy Used',
+					type: 'column',
+					yAxis: 1,
+					data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+					tooltip: {
+						valueSuffix: ' °'
+					}
+
+				}, {
+					name: 'Intput Voltage',
+					type: 'spline',
+					yAxis: 1,
+					data: [16, 16, 15.9, 15.5, 12.3, 09.5, 09.6, 10.2, 13.1, 16.9, 18.2, 16.7],
+					marker: {
+						enabled: false
+					},
+					dashStyle: 'shortdot',
+					tooltip: {
+						valueSuffix: ' V'
+					}
+
+				}, {
+					name: 'Intput Ampere',
+					type: 'spline',
+					data: [7.0, 6.9, 9.5, 4.5, 8.2, 1.5, 5.2, 6.5, 3.3, 8.3, 3.9, 9.6],
+					tooltip: {
+						valueSuffix: ' A'
+					}
+				}]
+			});
+
+	</script>
+	
+</body>
+</html>
